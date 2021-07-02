@@ -18,16 +18,10 @@ class FuzzyAhp{
     {
         $this->bobotData = $bobotData;
         $this->_skalaFuzzy();
-    }
-
-    public function calculateFuzzy($data){
-        $this->bobotFuzzy = $data;
         $this->_sintesisFuzy();
         $this->_hasilSI();
         $this->_nilaiVektor();
         $this->_bobotVektor();
-        $verktor = $this->getBobotVektor();
-        return $verktor;
     }
 
     private function _skalaFuzzy(){
